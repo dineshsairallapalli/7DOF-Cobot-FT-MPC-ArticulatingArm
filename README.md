@@ -1,10 +1,6 @@
 # 7DOF-Cobot-FT-MPC-ArticulatingArm
 
-A 7-DoF collaborative robot arm controller that uses force–torque sensing and model-predictive control to articulate doors and other hinged objects.
-
-# 7DOF-Cobot-FT-MPC-ArticulatingArm
-
-_A 7-DoF collaborative robot (cobot) controller using force–torque sensing and Model-Predictive Control (MPC) to articulate doors and other hinged objects in robosuite.
+A 7-DoF collaborative robot arm controller that uses force–torque sensing and model-predictive control to articulate doors and other hinged objects in Mujoco.
 
 ---
 ## Project Overview
