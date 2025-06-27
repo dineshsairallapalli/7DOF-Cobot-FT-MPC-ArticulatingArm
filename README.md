@@ -34,7 +34,7 @@ By leveraging robosuite, we avoid building low-level simulators ourselves and fo
 
 ## Supported Manipulator Cobots
 
-This controller has been tested on—and can be deployed to—any of robosuite’s standard manipulators:
+This controller has been tested on and can be deployed to any of robosuite’s standard manipulators:
 
 | Robot         | DOF | Gripper           |
 | ------------- | --- | ----------------- |
