@@ -1,4 +1,4 @@
-# 7DOF-Cobot-FT-MPC-ArticulatingArm-muJoco
+# 7DOF-Cobot-FT-MPC-ArticulatingArm-MuJoCo-Python
 
 A 7-DoF collaborative robot arm controller that uses force–torque sensing and model-predictive control to articulate doors and other hinged objects in Mujoco.
 
