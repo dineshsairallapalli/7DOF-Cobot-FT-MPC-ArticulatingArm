@@ -1,0 +1,5 @@
+numpy>=1.25
+scipy>=1.10
+imageio>=2.27
+robosuite>=1.5
+dataclasses; python_version < "3.7"
