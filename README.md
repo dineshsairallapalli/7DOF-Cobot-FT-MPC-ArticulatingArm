@@ -160,3 +160,5 @@ This project demonstrates how to leverage these features for everyday tasks like
 * **Multi-object articulation**: extend to drawers, valves, and sliding doors.
 * **Human–robot handoff**: detect human hand presence and dynamically yield control.
 
+![image](https://github.com/user-attachments/assets/234258c3-a2b3-42a6-a54e-c8bca32b2479)
+
