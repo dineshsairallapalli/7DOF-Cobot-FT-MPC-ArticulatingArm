@@ -1,39 +1,19 @@
 # 7DOF-Cobot-FT-MPC-ArticulatingArm
-A 7-DoF collaborative robot arm (Sawyer) controller that uses force–torque sensing and model-predictive control to articulate doors and other hinged objects.
+
+A 7-DoF collaborative robot arm controller that uses force–torque sensing and model-predictive control to articulate doors and other hinged objects.
 ````markdown
 # 7DOF-Cobot-FT-MPC-ArticulatingArm
 
-_A 7-DoF collaborative robot (cobot) controller using force–torque sensing and Model-Predictive Control (MPC) to articulate doors and other hinged objects in robosuite._
+_A 7-DoF collaborative robot (cobot) controller using force–torque sensing and Model-Predictive Control (MPC) to articulate doors and other hinged objects in robosuite.
 
 ---
-
-## Table of Contents
-
-1. [Project Overview](#project-overview)  
-2. [Why robosuite?](#why-robosuite)  
-3. [Supported Manipulator Cobots](#supported-manipulator-cobots)  
-4. [Key Concepts](#key-concepts)  
-   - [Force–Torque Sensing](#force–torque-sensing)  
-   - [Model-Predictive Control (MPC)](#model-predictive-control-mpc)  
-   - [Servo-Based Approach](#servo-based-approach)  
-   - [Adaptive Gripping Logic](#adaptive-gripping-logic)  
-5. [System Architecture](#system-architecture)  
-6. [Installation & Deployment](#installation--deployment)  
-   - [Prerequisites](#prerequisites)  
-   - [Conda Environment Setup](#conda-environment-setup)  
-   - [Clone & Install](#clone--install)  
-7. [Usage Examples](#usage-examples)  
-8. [How to Customize](#how-to-customize)  
-9. [Cobots in Collaborative Robotics](#cobots-in-collaborative-robotics)  
-10. [Future Scope](#future-scope)  
-11. [Contributing](#contributing)  
-12. [License](#license)  
-
----
-
 ## Project Overview
 
-This repository provides a reusable Python implementation of a door-opening controller for collaborative robot arms in [robosuite](https://github.com/StanfordVL/robosuite). It seamlessly blends:
+This repository provides a reusable Python implementation of a door-opening controller for collaborative robot arms in Robosuite environment of Mujoco. 
+
+Robotsuite: (https://github.com/StanfordVL/robosuite)
+
+It seamlessly blends:
 
 - **Servo-based positioning** toward a handle  
 - **6-axis force–torque feedback** for trustworthy contact detection  
@@ -153,33 +133,6 @@ pip install -e .
 
 ---
 
-## Usage Examples
-
-### Open a Door to 60°
-
-```bash
-python examples/run_door_controller.py \
-  --robot Sawyer \
-  --hinge-cutoff 60 \
-  --mpc-horizon 15 \
-  --mpc-samples 200 \
-  --f-soft 5.0 \
-  --f-hard 15.0 \
-  --t-soft 0.5 \
-  --t-hard 2.0
-```
-
-### Swap to Franka Panda
-
-```bash
-python examples/run_door_controller.py \
-  --robot Panda \
-  --hinge-cutoff 45 \
-  --... (other params)
-```
-
----
-
 ## How to Customize
 
 * **ForceTorqueLimits**: adjust soft/hard force & torque thresholds.
@@ -211,22 +164,3 @@ This project demonstrates how to leverage these features for everyday tasks like
 * **Multi-object articulation**: extend to drawers, valves, and sliding doors.
 * **Human–robot handoff**: detect human hand presence and dynamically yield control.
 
----
-
-## Contributing
-
-1. Fork this repository.
-2. Create a feature branch (`git checkout -b feature/XYZ`).
-3. Commit your changes and push to your fork.
-4. Open a Pull Request with a clear description.
-
-Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) and write tests for new functionality.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
-```
-```
