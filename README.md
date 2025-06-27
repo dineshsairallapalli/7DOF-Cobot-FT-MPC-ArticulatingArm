@@ -119,7 +119,7 @@ conda activate rsuite
 ### Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/7DOF-Cobot-FT-MPC-ArticulatingArm.git
+git clone https://github.com/ydineshsairallapalli/7DOF-Cobot-FT-MPC-ArticulatingArm.git
 cd 7DOF-Cobot-FT-MPC-ArticulatingArm
 
 # Install Python dependencies
